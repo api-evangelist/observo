@@ -1,7 +1,24 @@
 aid: observo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/observo.png
 name: Observo
-description: Observo is a company surfaced as a portfolio company of felicis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Observo AI built an AI-native data pipeline (telemetry pipeline) platform that optimizes
+  security and observability data in flight, filtering, enriching, and normalizing logs, metrics, and
+  traces into standard schemas like OCSF to cut SIEM and observability data volume and cost before
+  ingestion into the SOC. Founded in 2022 and backed by Felicis, Observo AI was acquired by SentinelOne;
+  the observo.ai domain now 301-redirects to SentinelOne's Singularity AI Data Pipelines product, its
+  documentation host (docs.observo.ai) is authentication-gated, and there is no public developer API,
+  OpenAPI specification, or programmatic surface to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/observo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,22 @@ x-backed-by:
 - felicis
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: sentinelone
+x-acquired-product: https://www.sentinelone.com/platform/data-pipelines/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Data Pipeline
+- Observability
+- Security
+- Telemetry
+- SIEM
+- OCSF
+- Artificial Intelligence
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,10 @@ maintainers:
 common:
 - type: Website
   url: https://observo.ai
+- type: DomainSecurity
+  url: security/observo-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
